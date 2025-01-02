@@ -34,7 +34,7 @@ export default function NavigationBar() {
         scrolled ? "bg-light-base bg-opacity-20 shadow-sm" : "bg-light-base/50"
       }`}
     >
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto xl:px-0 md:py-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto xl:px-0 py-4">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="/favicon.png" className="h-8" alt="DevFlex Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap">
