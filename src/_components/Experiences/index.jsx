@@ -72,8 +72,8 @@ export default function Experiences() {
             </button>
           </div>
         </div>
-        <div className="flex gap-4 absolute overflow-hidden">
-          {experiences.slice(currentIndex, currentIndex + 3).map((experience) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 relative">
+          {experiences.map((experience) => (
             <ExperiencesCard
               experience={experience}
               key={experience.id}

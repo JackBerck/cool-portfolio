@@ -5,7 +5,7 @@ export default function ExperiencesCard({ experience, currentIndex }) {
         className="bg-cover bg-center text-light-base min-h-[360px] flex flex-col justify-end p-4 relative transition duration-300"
         style={{
           backgroundImage: `url(${experience.image})`,
-          transform: `translateX(-${currentIndex * 100}%)`,
+          transform: `translateX(-${currentIndex}%)`,
         }}
       >
         <div className="relative z-10">

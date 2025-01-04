@@ -16,6 +16,7 @@ export default {
         "blue-base": "#186EFF",
         "dark-base": "#2D383F",
         "light-base": "#f8fafc",
+        "rose-base": "#FF3366",
       },
     },
   },

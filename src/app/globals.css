@@ -31,11 +31,11 @@
 }
 
 .big-font-size {
-  @apply md:text-lg lg:text-xl;
+  @apply text-lg lg:text-xl;
 }
 
 .normal-font-size {
-  @apply text-sm lg:text-base xl:text-lg;
+  @apply text-base xl:text-lg;
 }
 
 .small-font-size {
