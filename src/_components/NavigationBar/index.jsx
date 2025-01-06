@@ -31,7 +31,7 @@ export default function NavigationBar() {
   return (
     <nav
       className={`section-padding-x fixed top-0 w-full z-[999] text-dark-base normal-font-size transition-all duration-300 ${
-        scrolled ? "bg-light-base bg-opacity-20 shadow-sm" : "bg-light-base/50"
+        scrolled ? "bg-light-base/80 shadow-sm" : "bg-light-base/50"
       }`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto xl:px-0 py-4">

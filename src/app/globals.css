@@ -39,7 +39,7 @@
 }
 
 .small-font-size {
-  @apply text-xs md:text-sm;
+  @apply text-sm md:text-base;
 }
 
 .footer-font-size {
