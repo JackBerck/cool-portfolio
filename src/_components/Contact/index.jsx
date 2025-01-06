@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <section
-      className="section-padding-x pt-16 pb-16 normal-font-size text-dark-base bg-light-base flex items-center justify-center"
+      className="section-padding-x pt-8 pb-8 normal-font-size text-dark-base bg-light-base flex items-center justify-center"
       id="contact"
     >
       <div className="max-w-screen-xl container">
@@ -95,51 +95,51 @@ export default function Contact() {
           </div>
           <div className="lg:w-1/2">
             <form action="" className="flex flex-col gap-2">
-                <div className="">
-                    <label htmlFor="name" className="block">
-                    Name <span className="text-rose-base">*</span>
-                    </label>
-                    <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="w-full p-2 border border-dark-base rounded-md"
-                    placeholder="Your Name..."
-                    required
-                    />
-                </div>
-                <div className="">
-                    <label htmlFor="email" className="block">
-                    Email <span className="text-rose-base">*</span>
-                    </label>
-                    <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full p-2 border border-dark-base rounded-md"
-                    placeholder="Your Email..."
-                    required
-                    />
-                </div>
-                <div className="">
-                    <label htmlFor="message" className="block">
-                    Message <span className="text-rose-base">*</span>
-                    </label>
-                    <textarea
-                    name="message"
-                    id="message"
-                    rows="5"
-                    className="w-full p-2 border border-dark-base rounded-md"
-                    placeholder="Your Message..."
-                    required
-                    ></textarea>
-                </div>
-                <button
-                    type="submit"
-                    className="bg-blue-base text-light-base p-2 rounded-md"
-                >
-                    Send
-                </button>
+              <div className="">
+                <label htmlFor="name" className="block">
+                  Name <span className="text-rose-base">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  className="w-full p-2 border border-dark-base rounded-md"
+                  placeholder="Your Name..."
+                  required
+                />
+              </div>
+              <div className="">
+                <label htmlFor="email" className="block">
+                  Email <span className="text-rose-base">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="w-full p-2 border border-dark-base rounded-md"
+                  placeholder="Your Email..."
+                  required
+                />
+              </div>
+              <div className="">
+                <label htmlFor="message" className="block">
+                  Message <span className="text-rose-base">*</span>
+                </label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="5"
+                  className="w-full p-2 border border-dark-base rounded-md"
+                  placeholder="Your Message..."
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="bg-blue-base text-light-base p-2 rounded-md"
+              >
+                Send
+              </button>
             </form>
           </div>
         </div>

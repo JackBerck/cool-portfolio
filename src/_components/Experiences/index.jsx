@@ -41,7 +41,7 @@ export default function Experiences() {
 
   return (
     <section
-      className="section-padding-x pt-16 pb-16 normal-font-size text-dark-base bg-light-base flex items-center justify-center"
+      className="section-padding-x pt-8 pb-8 normal-font-size text-dark-base bg-light-base flex items-center justify-center"
       id="experiences"
     >
       <div className="max-w-screen-xl container">

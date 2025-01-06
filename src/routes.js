@@ -16,10 +16,6 @@ export const routes = [
     url: "#projects",
   },
   {
-    title: "Volunteers",
-    url: "#volunteers",
-  },
-  {
     title: "Certificates",
     url: "#certificates",
   },
