@@ -1,4 +1,4 @@
-export default function ExperiencesCard({ experience, currentIndex }) {
+export default function ExperienceCard({ experience, currentIndex }) {
   return (
     <>
       <div

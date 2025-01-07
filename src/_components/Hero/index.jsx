@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="section-padding-x normal-font-size text-light-base bg-[url('/img/backgrounds/sivasankara.jpg')] bg-cover bg-right lg:bg-center min-h-screen flex items-center justify-center">
+    <section id="home" className="section-padding-x normal-font-size text-light-base bg-[url('/img/backgrounds/sivasankara.jpg')] bg-cover bg-right lg:bg-center min-h-screen flex items-center justify-center">
       <div className="max-w-screen-xl container">
         <div className="max-w-xl">
           <h1 className="font-semibold title-font-size">Muhammad Zaki Dzulfikar</h1>

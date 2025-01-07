@@ -2,12 +2,12 @@ export default function ProjectCard({ project }) {
   return (
     <div
       key={project.id}
-      className="bg-light-base rounded-lg shadow-md p-4 flex flex-col gap-2"
+      className="bg-light-base shadow-md p-4 flex flex-col gap-2"
     >
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-48 object-cover rounded-lg"
+        className="w-full h-48 object-cover"
       />
       <h3 className="font-semibold subtitle-font-size">{project.title}</h3>
       <p className="hidden">{project.category}</p>

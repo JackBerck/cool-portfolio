@@ -103,7 +103,7 @@ export default function Contact() {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full p-2 border border-dark-base rounded-md"
+                  className="w-full p-2 border border-dark-base"
                   placeholder="Your Name..."
                   required
                 />
@@ -116,7 +116,7 @@ export default function Contact() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full p-2 border border-dark-base rounded-md"
+                  className="w-full p-2 border border-dark-base"
                   placeholder="Your Email..."
                   required
                 />
@@ -129,14 +129,14 @@ export default function Contact() {
                   name="message"
                   id="message"
                   rows="5"
-                  className="w-full p-2 border border-dark-base rounded-md"
+                  className="w-full p-2 border border-dark-base"
                   placeholder="Your Message..."
                   required
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="bg-blue-base text-light-base p-2 rounded-md"
+                className="bg-blue-base text-light-base p-2"
               >
                 Send
               </button>

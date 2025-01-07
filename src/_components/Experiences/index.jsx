@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import ExperiencesCard from "@/_components/Experiences/Experiences";
+import ExperienceCard from "@/_components/Experiences/ExperienceCard";
 import experiences from "@/_data/experiences";
 import PaginationButton from "../PaginationButton";
 
@@ -41,7 +41,7 @@ export default function Experiences() {
 
   return (
     <section
-      className="section-padding-x pt-8 pb-8 normal-font-size text-dark-base bg-light-base flex items-center justify-center"
+      className="section-padding-x pt-16 pb-16 normal-font-size text-dark-base bg-light-base flex items-center justify-center"
       id="experiences"
     >
       <div className="max-w-screen-xl container">
@@ -58,7 +58,7 @@ export default function Experiences() {
           {experiences
             .slice(currentIndex, currentIndex + experiencesPerPage)
             .map((experience) => (
-              <ExperiencesCard
+              <ExperienceCard
                 experience={experience}
                 key={experience.id}
                 currentIndex={currentIndex}
