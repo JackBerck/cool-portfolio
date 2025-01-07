@@ -22,10 +22,11 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" href="/favicon.png" />
         <title>Jack's Portfolio Website</title>
       </head>
-      <body className={`bg-light-base text-dark-base ${afacadFlux.variable} antialiased font-[family-name:var(--font-afacad-flux)]`}>
+      <body
+        className={`bg-light-base text-dark-base ${afacadFlux.variable} antialiased font-[family-name:var(--font-afacad-flux)]`}
+      >
         <NavigationBar />
         {children}
-        {/* <Footer /> */}
       </body>
     </html>
   );

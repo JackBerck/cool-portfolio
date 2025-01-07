@@ -1,3 +1,4 @@
+
 export default function Footer() {
   return (
     <footer className="section-padding-x pt-4 pb-4 normal-font-size text-light-base bg-dark-base flex items-center justify-center">

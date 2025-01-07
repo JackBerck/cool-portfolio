@@ -1,6 +1,5 @@
 "use client";
-import { useState } from "react";
-// import "../../../public/css/hamburger-button.css";
+
 export default function HamburgerButton({ onClick }) {
   return (
     <button
@@ -19,13 +18,3 @@ export default function HamburgerButton({ onClick }) {
     </button>
   );
 }
-
-/* return (
- *   <input
- *     type="checkbox"
- *     role="button"
- *     aria-label="Display the menu"
- *     className="menu lg:hidden"
- *   ></input>
- * );
- */

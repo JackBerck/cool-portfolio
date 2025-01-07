@@ -4,8 +4,8 @@ import RootLayout from "./layout";
 import Experiences from "@/_components/Experiences";
 import Projects from "@/_components/Projects";
 import Contact from "@/_components/Contact";
-import Footer from "@/_components/Footer";
 import Certifications from "@/_components/Certifications";
+import Footer from "@/_components/Footer";
 
 export default function Home() {
   return (
