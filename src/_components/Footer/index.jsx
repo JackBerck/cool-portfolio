@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-screen-xl container">
         <div className="text-center">
           <p>
-            &copy; {new Date().getFullYear()} <a href="https://instagram.com/zakidzlfkr_" className="text-blue-base">Ankit Kumar</a>. All rights reserved.
+            &copy; {new Date().getFullYear()} <a href="https://instagram.com/zakidzlfkr_" className="text-blue-base">Muhammad Zaki Dzulfikar</a>. All rights reserved.
           </p>
         </div>
       </div>

@@ -12,6 +12,7 @@ export default function certificateCard({ certificate, currentIndex }) {
       <h3 className="font-semibold subtitle-font-size">
         {certificate.position}
       </h3>
+      <p className="hidden">{certificate.category}</p>
       <p className="w-fit"><span className="bg-blue-base text-light-base px-1">{certificate.organization}</span> | <span>{certificate.date}</span></p>
       <p className="">{certificate.description}</p>
     </div>

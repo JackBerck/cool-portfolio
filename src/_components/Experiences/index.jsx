@@ -3,9 +3,10 @@ import { useState, useEffect } from "react";
 import ExperienceCard from "@/_components/Experiences/ExperienceCard";
 import experiences from "@/_data/experiences";
 import PaginationButton from "../PaginationButton";
+import ExperienceTimeline from "./ExperienceTimeline";
 
 export default function Experiences() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  /* const [currentIndex, setCurrentIndex] = useState(0);
   const [experiencesPerPage, setExperiencesPerPage] = useState(6);
 
   useEffect(() => {
@@ -38,6 +39,7 @@ export default function Experiences() {
   const isNextDisabled =
     currentIndex + experiencesPerPage >= experiences.length;
   const isPrevDisabled = currentIndex === 0;
+  */
 
   return (
     <section
@@ -47,24 +49,18 @@ export default function Experiences() {
       <div className="max-w-screen-xl container">
         <div className="flex justify-between items-center mb-4">
           <h2 className="title-font-size font-semibold">Experiences</h2>
-          <PaginationButton
+          {/* <PaginationButton
             handlePrev={handlePrev}
             handleNext={handleNext}
             isPrevDisabled={isPrevDisabled}
             isNextDisabled={isNextDisabled}
-          />
+          /> */}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 relative">
-          {experiences
-            .slice(currentIndex, currentIndex + experiencesPerPage)
-            .map((experience) => (
-              <ExperienceCard
-                experience={experience}
-                key={experience.id}
-                currentIndex={currentIndex}
-              />
-            ))}
-        </div>
+        <ol className="items-center sm:flex">
+          {experiences.sort((a, b) => b.id - a.id).map((experience) => (
+            <ExperienceTimeline key={experience.id} experience={experience} />
+          ))}
+        </ol>
       </div>
     </section>
   );

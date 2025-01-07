@@ -7,6 +7,7 @@ import certificates from "@/_data/certificates";
 export default function Certifications() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [certificatesPerPage, setCertificatesPerPage] = useState(6);
+  const [selectedCategory, setSelectedCategory] = useState("all");
 
   useEffect(() => {
     const updateCertificatesPerPage = () => {
@@ -35,8 +36,20 @@ export default function Certifications() {
     setCurrentIndex(currentIndex - certificatesPerPage);
   };
 
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+    setCurrentIndex(0);
+  };
+
+  const filteredCertificates =
+    selectedCategory === "all"
+      ? certificates
+      : certificates.filter(
+          (certificate) => certificate.category === selectedCategory
+        );
+
   const isNextDisabled =
-    currentIndex + certificatesPerPage >= certificates.length;
+    currentIndex + certificatesPerPage >= filteredCertificates.length;
   const isPrevDisabled = currentIndex === 0;
 
   return (
@@ -99,15 +112,21 @@ export default function Certifications() {
           </button>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 relative">
-          {certificates
-            .slice(currentIndex, currentIndex + certificatesPerPage)
-            .map((certificate) => (
-              <CertificationCard
-                certificate={certificate}
-                key={certificate.id}
-                currentIndex={currentIndex}
-              />
-            ))}
+          {filteredCertificates.length === 0 ? (
+            <p className="text-center col-span-full font-semibold subtitle-font-size">
+              Coming Soon
+            </p>
+          ) : (
+            filteredCertificates
+              .slice(currentIndex, currentIndex + certificatesPerPage)
+              .map((certificate) => (
+                <CertificationCard
+                  certificate={certificate}
+                  key={certificate.id}
+                  currentIndex={currentIndex}
+                />
+              ))
+          )}
         </div>
       </div>
     </section>

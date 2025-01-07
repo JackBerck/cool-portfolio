@@ -9,7 +9,7 @@ export default function AboutMe() {
           About Me
         </h2>
         <div className="mx-auto grid grid-cols-4 gap-4 max-w-screen-lg">
-          <div className="col-span-4 md:col-span-2 bg-light-base text-dark-base p-4">
+          <div className="flex items-center justify-center col-span-4 md:col-span-2 bg-light-base text-dark-base p-4">
             <p className="">
               I am a software engineer with a strong passion for web
               development, specializing in creating innovative and user-friendly
@@ -52,8 +52,8 @@ export default function AboutMe() {
             </p>
             <p className="big-font-size text-center">Computer Science, 2023</p>
           </div>
-          <div className="col-span-4 md:col-span-2 bg-light-base text-dark-base p-4">
-            <p>
+          <div className="flex items-center justify-center col-span-4 md:col-span-2 bg-light-base text-dark-base p-4">
+            <p className="">
               I’m currently seeking new opportunities to collaborate on exciting
               projects with talented teams. If you're looking for a dedicated
               and creative developer to bring fresh ideas and expertise to your

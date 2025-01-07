@@ -1,13 +1,14 @@
 "use client";
-"use strict";
 import { useState, useEffect } from "react";
 import NavLink from "./NavLink";
-import HamburgerButton from "./HamburgerButton";
 import { routes } from "@/routes";
 
 export default function NavigationBar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  function handleClick() {
+    setOpen(!open);
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,10 +25,6 @@ export default function NavigationBar() {
     };
   }, []);
 
-  function handleClick() {
-    setOpen(!open);
-  }
-
   return (
     <nav
       className={`section-padding-x fixed top-0 w-full z-[999] text-dark-base normal-font-size transition-all duration-300 ${
@@ -41,7 +38,20 @@ export default function NavigationBar() {
             Jack's
           </span>
         </a>
-        <HamburgerButton onClick={handleClick} />
+        <button
+          type="button"
+          className="lg:hidden text-dark-base w-8"
+          onClick={handleClick}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            className="w-full"
+            viewBox="0 0 448 512"
+          >
+            <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+          </svg>
+        </button>
         <div
           className={`w-full lg:block lg:w-auto ${open ? "block" : "hidden"}`}
         >
