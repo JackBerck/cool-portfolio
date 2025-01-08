@@ -3,11 +3,12 @@ import { useState } from "react";
 import { routes } from "@/routes";
 import NavLink from "./NavLink";
 
-export default function NavigationBar() {
+export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    console.log('Menu is open:', isMenuOpen);
   };
 
   return (

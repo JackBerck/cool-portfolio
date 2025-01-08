@@ -1,6 +1,7 @@
 import { Afacad_Flux } from "next/font/google";
 import "./globals.css";
-import NavigationBar from "@/_components/NavigationBar";
+import Navigation from "@/_components/Navigation";
+import Footer from "@/_components/Footer";
 
 const afacadFlux = Afacad_Flux({
   variable: "--font-afacad-flux",
@@ -25,7 +26,7 @@ export default function RootLayout({ children }) {
       <body
         className={`bg-light-base text-dark-base ${afacadFlux.variable} antialiased font-[family-name:var(--font-afacad-flux)]`}
       >
-        <NavigationBar />
+        <Navigation />
         {children}
       </body>
     </html>

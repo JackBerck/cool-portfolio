@@ -1,13 +1,20 @@
-
 export default function Footer() {
   return (
-    <footer className="section-padding-x pt-4 pb-4 normal-font-size text-light-base bg-dark-base flex items-center justify-center">
+    <footer
+      id="footer"
+      className="section-padding-x pt-4 pb-4 normal-font-size text-light-base bg-dark-base flex items-center justify-center"
+    >
       <div className="max-w-screen-xl container">
-        <div className="text-center">
-          <p>
-            &copy; {new Date().getFullYear()} <a href="https://instagram.com/zakidzlfkr_" className="text-blue-base">Muhammad Zaki Dzulfikar</a>. All rights reserved.
-          </p>
-        </div>
+        <p className="text-center">
+          &copy; {new Date().getFullYear()}{" "}
+          <a
+            href="https://instagram.com/zakidzlfkr_"
+            className="text-blue-base"
+          >
+            Muhammad Zaki Dzulfikar
+          </a>
+          . All rights reserved.
+        </p>
       </div>
     </footer>
   );

@@ -54,7 +54,7 @@ export default function Certifications() {
 
   return (
     <section
-      className="section-padding-x pt-16 pb-16 normal-font-size text-dark-base bg-light-base flex items-center justify-center"
+      className="scroll-m-16 section-padding-x pt-16 pb-16 normal-font-size text-dark-base bg-light-base flex items-center justify-center"
       id="certificates"
     >
       <div className="max-w-screen-xl container">

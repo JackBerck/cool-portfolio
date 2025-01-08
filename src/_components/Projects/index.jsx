@@ -53,7 +53,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="section-padding-x pt-8 pb-8 normal-font-size text-dark-base bg-light-base flex items-center justify-center"
+      className="scroll-m-16 section-padding-x pt-8 pb-8 normal-font-size text-dark-base bg-light-base flex items-center justify-center"
     >
       <div className="max-w-screen-xl container">
         <div className="flex justify-between items-center mb-2 lg:mb-4">
